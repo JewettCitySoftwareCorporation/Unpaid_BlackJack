@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>UNPAID Black Jack Project</title>
+  <meta name="description" content="An UNPAID Black Jack Project, hoping to let me be able to do work.">
+  <meta name="author" content="Luke@jcsc.biz">
+  <!--  
+          Built by: Luke@jcsc.biz
+
+                   ┬┌─┐┌─┐┌─┐ ┌┐ ┬┌─┐
+                   ││  └─┐│   ├┴┐│┌─┘
+                  └┘└─┘└─┘└─┘o└─┘┴└─┘
+
+          # JCSC :
+
+
+          This is a simple UNPAID Black Jack Project to showcase efforts @ jcsc.biz
+                      
+           ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ 
+          ||L |||u |||k |||e |||@ |||j |||c |||s |||c |||. |||b |||i |||z ||
+          ||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__||
+          |/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|
+
+   -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'><link rel="stylesheet" href="./BlackJack.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container" id="app">
+    <h1>Black Jack <small>{{ 'Score: ' + score }}</small></h1>
+    <div class="alert alert-success" role="alert" v-html="msgStr || 'No message.'"></div>
+    <div class="row" id="btnRow">
+      <div class="col-xs-4"><button class="btn btn-block btn-success" v-on:click="hit">Hit</button></div>
+      <div class="col-xs-4"><button class="btn btn-block btn-primary" v-on:click="stand">Stand</button></div>
+      <div class="col-xs-4"><button class="btn btn-block btn-danger" v-on:click="deal">Deal</button></div>
+    </div>
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"><span class="glyphicon glyphicon-user"></span> Player <span class="badge">{{ playerScore }}</span></h3>
+      </div>
+      <div class="panel-body">
+        <div v-for="card in player" v-bind:class="'poker poker-' + card"></div>
+      </div>
+    </div>
+    <div class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title"><span class="glyphicon glyphicon-fire"></span> Dealer <span class="badge">{{ playing ? '?' : dealerScore }}</span></h3>
+      </div>
+      <div class="panel-body">
+        <div v-for="(card, i) in dealer" class="poker" v-bind:class="(playing && i==0) ? cardback : ('poker-' + card)"></div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.js"></script>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.js'></script><script  src="./BlackJack.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>UNPAID Black Jack Project</title>   
+  <meta name="description" content="An UNPAID Black Jack Project, hoping to let me be able to do work.">
+  <meta name="author" content="Luke@jcsc.biz">
+  <!--  
+          Built by: Luke@jcsc.biz
+
+                   ┬┌─┐┌─┐┌─┐ ┌┐ ┬┌─┐
+                   ││  └─┐│   ├┴┐│┌─┘
+                  └┘└─┘└─┘└─┘o└─┘┴└─┘
+
+          # JCSC :
+
+
+          This is a simple UNPAID Black Jack Project to showcase efforts @ jcsc.biz
+                      
+           ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ 
+          ||L |||u |||k |||e |||@ |||j |||c |||s |||c |||. |||b |||i |||z ||
+          ||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__||
+          |/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|
+
+   -->
+  <link rel="stylesheet" href="./Basic.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="bs-container">
+  <div id=bs-buttons>
+    <button id="bs-deal" onclick="BlackJack.deal()">Deal</button>
+    <button id="bs-hit" onclick="BlackJack.hit('player')">Hit</button>
+    <button id="bs-stand" onclick="BlackJack.stand()">Stand</button>
+  </div>
+  <div id="bs-score">
+    <span id="bs-player">Player:<span id="bs-player-wins">0</span></span>
+    /
+    <span id="bs-dealer">Dealer:<span id="bs-dealer-wins">0</span></span>
+  </div>
+  <div id="bs-messages"></div>
+  <div id="bs-table">
+    <h3>Dealer</h3>
+    <div id="bs-dealer-hand"></div>
+    <h3>Player</h3>
+    <div id="bs-player-hand"></div>
+  </div>
+</div>
+
+<script type="application/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!-- partial -->
+  <script  src="./Basic.js"></script>
+
+</body>
+</html>

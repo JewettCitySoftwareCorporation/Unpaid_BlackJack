@@ -1,0 +1,65 @@
+#deal-hand,
+#player-hand {
+  clear: left;
+}
+
+#choice {
+  padding: 10px;
+  width: 100%;
+}
+
+body {
+  background: green url("https://www.matthewtesterman.com/img/bg.png") left top;
+}
+
+#loose-modal {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 33%;
+  border-radius: 5px;
+  position: absolute;
+  width: 50%;
+  min-height: 100px;
+  display: none;
+}
+
+#winner-modal {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 33%;
+  border-radius: 5px;
+  position: absolute;
+  width: 50%;
+  min-height: 100px;
+  display: none;
+}
+
+#push-modal {
+  background-color: #ffc108;
+  color: #212529;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 33%;
+  border-radius: 5px;
+  position: absolute;
+  width: 50%;
+  min-height: 100px;
+  display: none;
+}
+
+#git-hub {
+  color: #FFF;
+  position: absolute;
+  left: 1%;
+  top: 0;
+  min-height: 10px;
+  background-color: #FFF;
+}
